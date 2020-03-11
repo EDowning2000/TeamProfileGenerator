@@ -18,4 +18,4 @@ getRole (){
 }
 }
 
-module.exports = "Employee"
+module.exports = Employee
