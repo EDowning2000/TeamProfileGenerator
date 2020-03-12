@@ -38,8 +38,19 @@ const promptManager = [{
     ]
 }
 
-
-]
+function nextEmployee(){
+  inquirer.prompt([{
+    ype: 'list',
+    message: 'What type of employee would you like to add next?',
+    name: 'role',
+    choices: [
+        "manager",
+        "engineer",
+        "intern",
+        "No more employees"
+    ]
+  }])  
+}
 ​
 ​
 // Write code to use inquirer to gather information about the development team members,
