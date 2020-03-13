@@ -33,7 +33,6 @@ function initialManagerPrompt () {
   manager.push(data)
   console.log(manager)
   nextEmployee()
-  
 })
 }
 
@@ -49,6 +48,7 @@ function nextEmployee() {
         "No more employees"
     ]})
     .then(data=>{
+
       const role = data.role
       switch(role){
         case "Manager": 
@@ -120,3 +120,4 @@ name : "enginnerGithub"
 
 
 initialManagerPrompt()
+module.exports = app
