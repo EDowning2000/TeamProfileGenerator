@@ -118,4 +118,4 @@ name : "enginnerGithub"
 
 
 
-initialPrompt()
+initialManagerPrompt()
