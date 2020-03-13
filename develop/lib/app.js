@@ -43,9 +43,9 @@ function nextEmployee() {
     message: "What type of employee would you like to add next?",
     name: "role",
     choices: [
-        "manager",
-        "engineer",
-        "intern",
+        "Manager",
+        "Engineer",
+        "Intern",
         "No more employees"
     ]})
     .then(data=>{
@@ -58,7 +58,7 @@ function nextEmployee() {
           internPrompt();
           break;
         case "Engineer":
-          engineerPrompt();
+          EngineerPrompt();
           break;
         case "No more employees":
           return "Roster Completed";
@@ -91,7 +91,7 @@ function nextEmployee() {
   })
 
 
-function engineerPrompt() { 
+function EngineerPrompt() { 
   inquirer.prompt([{
     type: "input",
 message : "What is your engineeers name?", 
