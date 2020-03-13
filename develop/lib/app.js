@@ -58,7 +58,7 @@ function nextEmployee() {
           internPrompt();
           break;
         case "Engineer":
-          EngineerPrompt();
+          engineerPrompt();
           break;
         case "No more employees":
           return "Roster Completed";
@@ -89,9 +89,9 @@ function nextEmployee() {
   console.log(intern)
   nextEmployee()
   })
+  }
 
-
-function EngineerPrompt() { 
+function engineerPrompt() { 
   inquirer.prompt([{
     type: "input",
 message : "What is your engineeers name?", 
@@ -114,7 +114,8 @@ name : "enginnerGithub"
   console.log(engineer)
   nextEmployee()
 })
-}}
+}
+  
 
 
 
