@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-const app = require('app')
+
 
 const templatesDir = path.resolve(__dirname, "../templates");
 
@@ -22,7 +22,7 @@ const render = employees => {
 
   return renderMain(html.join(""));
 
-};
+};       
 
 const renderManager = manager => {
   let template = fs.readFileSync(path.resolve(templatesDir, "manager.html"), "utf8");
